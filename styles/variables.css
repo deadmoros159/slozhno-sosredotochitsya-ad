@@ -2,3 +2,56 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --white: #FFF1F7;
+  --light-pink-1: #FFC2E6;
+  --light-pink-2: #F1B2CE;
+  --pink: #FF8DCB;
+  --violet: #DB00FF;
+  --red: #FF0070;
+  --dark-red: rgb(255 0 112 / 0.4);
+  --light-black: #353430;
+  --black: #000028;
+  --middle-black: rgb(53 52 48 / 0.4);
+
+  --color: var(--light-pink-2);
+  --color-accent: var(--black);
+  --color-title: var(--violet);
+  --color-button: var(--red); 
+  --color-button-hover: var(--dark-red);
+
+  --background-color: var(--black);
+  --background-color-accent: var(--red);
+  --background-image-header: url(/images/cover-image-dark.png);
+  
+  --font-family: 'IBM Plex mono';
+  --font-size-text: 1.125rem;
+  --font-size-header-title: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+
+  --line-height-text: 1.3;
+  --line-height-header-title: 0.825;
+
+  --gap-body: 40px;
+  --gap-main: 50px;
+  --gap-section: 20px;
+  --gap-section-text: 20px;
+  --gap-section-images: 10px;
+
+  --padding-button: 0.083em 0.722em;
+  --padding-body: 10px;
+
+  --margin-block-end-part-title: 10px;
+  --margin-block-end-subpart-title: 10px;
+}
+
+@media (width >= 768px) {
+  :root {
+    --font-size-header-title: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+
+    --gap-body: 60px;
+    --gap-main: 80px;
+    --gap-section-images: 20px;
+
+    --padding-body: 20px;
+  }
+}
