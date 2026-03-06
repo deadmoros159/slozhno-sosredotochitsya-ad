@@ -1,0 +1,23 @@
+.link {
+  --decorated-text-font-size: inherit;
+  --decorated-text-font-weigth: normal;
+  --decorated-text-line-height: inherit;
+  --decorated-text-color: inherit;
+  --decorated-text-shadow-position: 2px 2px;
+  
+  --border: 1px solid currentColor;
+  text-decoration: none;
+}
+
+.link:hover {
+  border-block-end: var(--border);
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  border: var(--border);
+  margin: -1px;
+}
